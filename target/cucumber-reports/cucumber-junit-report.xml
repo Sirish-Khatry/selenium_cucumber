@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="14.717">
+    <testcase classname="Calculator addition behaviour" name="Varying values Integer addition" time="0.024">
+        <system-out><![CDATA[Given the number 2.2........................................................passed
+And the second number 2.2...................................................passed
+When the numbers are added..................................................passed
+Then the result should be 4.4...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Calculator addition behaviour" name="Varying values Integer addition 2" time="0.003">
+        <system-out><![CDATA[Given the number 50.........................................................passed
+And the second number 50....................................................passed
+When the numbers are added..................................................passed
+Then the result should be 100...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Navigate to bing and search" name="_2" time="5.25">
+        <system-out><![CDATA[When I request "https://www.bing.com".......................................passed
+And I search for "dodge"....................................................passed
+Then the result should be "dodge - Bing"....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Navigate to demo page and register then login" name="_2" time="4.343">
+        <system-out><![CDATA[Given I navigate to "https://www.thedemosite.co.uk".........................passed
+When I provide username "Sirish" and password "Sirish" to register..........passed
+And I login with username "Sirish" and password "Sirish"....................passed
+Then the alert should be "**Successful Login**".............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Navigate to demo page and register then login" name="_2" time="4.794">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#selectable &gt; li:nth-child(2)&quot;}&#10;  (Session info: chrome=92.0.4515.131)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'&#10;System info: host: 'SIRISH', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4be66a987efc02d1e8ac9625596e4577, findElement {using=css selector, value=#selectable &gt; li:nth-child(2)}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: D:\Temp\scoped_dir23148_190...}, goog:chromeOptions: {debuggerAddress: localhost:59209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59209/devtoo..., se:cdpVersion: 92.0.4515.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4be66a987efc02d1e8ac9625596e4577" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given I navigate to "http://way2automation.com/way2auto_jquery/selectable.php#load_box".passed
+When I select item 2........................................................failed
+Then the highlighted result should be "Text 2"..............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#selectable > li:nth-child(2)"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'
+System info: host: 'SIRISH', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4be66a987efc02d1e8ac9625596e4577, findElement {using=css selector, value=#selectable > li:nth-child(2)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: D:\Temp\scoped_dir23148_190...}, goog:chromeOptions: {debuggerAddress: localhost:59209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59209/devtoo..., se:cdpVersion: 92.0.4515.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4be66a987efc02d1e8ac9625596e4577
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at com.qa.cucumber_selenium.setdefs.SelectItemStepDefs.iSelectAnItem(SelectItemStepDefs.java:35)
+	at ✽.I select item 2(classpath:features/selectItem.feature:8)
+]]></failure>
+    </testcase>
+</testsuite>
